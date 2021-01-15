@@ -1,8 +1,30 @@
-const solution =(name:string, age:number, gender:string):string=>{
-  return `hello ${name} you are ${age} and you are ${gender}!`
-}
+class Block {
+  public index: number;
+  public hash: string;
+  public previousHash: string;
+  public data: string;
+  public timestamp: number;
 
-console.log(solution("youngjin", 27, "mail")
+  constructor(
+  index:number,
+  hash:string,
+  previousHash:string,
+  data:string,
+  timestamp:number
 )
 
-export{} 
+{
+  this.index=index;
+  this.hash=hash;
+  this.previousHash=previousHash;
+  this.data=data;
+  this.timestamp=timestamp;
+
+}
+
+}
+
+const youngjinBlock:Block = new Block(0,"1111111", "","hello", 123456)
+const blockchain: [Block]=[youngjinBlock] 
+console.log(blockchain)
+export {} 
