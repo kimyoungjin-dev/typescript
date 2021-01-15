@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "crypto-js": "^4.0.0",
-    "tsc-watch": "^4.2.9"
+    "tsc-watch": "^4.2.9",
+    "tslint-config-prettier": "^1.18.0"
   }
 }
